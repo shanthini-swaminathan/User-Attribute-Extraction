@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+<center>
+  <h1 style="color:red"> PREDICTION SCORES</h1>
+</center>
+<center>
+<table class="table table-borderless" style="width: 50%" >
+  
+  <tbody>
+    <tr>
+      <th scope="row">Accuracy</th>
+      <td>{{output}}</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">Collection</th>
+      <td>{{output2}}</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">Attributes</th>
+      <td>{{output3}}</td>
+    </tr>
+  </tbody>
+</table>
+</center>
+
+<center>
+  <h1 style="color:red"> CLASSIFICATION REPORT</h1>
+</center>
+<center>
+  <img src="{{url_for('static', filename='result.png', width=100)}}" />
+</center>
+
+{% endblock %}

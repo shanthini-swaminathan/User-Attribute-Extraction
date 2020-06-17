@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+<h1 style="color:red"><center>PROJECT SUNRISE</center></h1>
+<center>
+<img src="{{url_for('static', filename='logo.jpg', width='50%')}}" align="middle" />
+</center>
+<h4><center>Submitted By</center></h4>
+<h4><center>RAMANAN R <br> SHANTHINI S </center></h4>
+
+{% endblock %}
